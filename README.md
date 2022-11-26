@@ -313,6 +313,20 @@ Other components:
 - Name is globally unique
 - All objects are stored within the bucket at the same level.
 
+#### 1.2.6.3 Summary
+
+- objects inside S3 are flat strctured not file structured.
+- 3.63 characters, all lower case, no underscores
+- start with a lowercase letter or a number
+- can't be IP formatted e.g. 1.1.1.1
+- you can form 100 (soft limit) buckets and through support can extend to 1000(hard limit) per account
+- so to tackle where you need 1 bucket for a user and there are 1000+ users then you need to create folder like structure inside the bucket.
+- Unlimited objects in bucket , object size 0 bytes to 5 TB.
+- S3 buckets are cannot be mounted as Hard drives. 
+- S3 is an object store - not file or block.
+- Great for large scale data storage, distribution or upload.
+- Great for 'offload'
+- Key=Name, Value=Data
 If the objects name starts with a slash such as `/old/Koala1.jpg` the UI will
 present this as a folder. In actuality this is not true, there are no folders.
 
